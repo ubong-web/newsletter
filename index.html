@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/reset.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="image">
+   <!-- <picture>
+ 
+    <img src="assets/images/illustration-sign-up-mobile.svg" alt="image"/>
+   </picture> -->
+   <picture>
+    <source
+      srcset="assets/images/illustration-sign-up-desktop.svg"
+      media="(min-width: 601px)"
+    />
+    <img
+      src="assets/images/illustration-sign-up-mobile.svg"
+      alt="picture of pefume with leaves around"
+      class="c-product-card__img"
+    />
+  </picture>
+      </div>
+      <div class="form">
+        <div class="description">
+        <h1 class="heading">Stay updated!</h1>
+        <p class="paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+      </div>
+        <ul class="list">
+          <li><img src="assets/images/icon-success.svg" alt="" class="list-image">Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-success.svg" alt="" class="list-image">Measuring to ensure updates are a success
+            And much more!</li>
+          <li><img src="assets/images/icon-success.svg" alt="" class="list-image">Stay updated!</li>
+        </ul>
+          
+        
+          <div class="form__input">
+          <p>Email address</p>
+          <input type="email" placeholder="email@company.com" class="input"
+          id="email-input">
+          <button class="button">Subscribe to monthly newsletter</button>
+        </div>
+        
+
+
+      </div>
+
+    </div>
+  </main>
+<!-- 
+  <!-- Sign-up form start -->
+
+  <!-- 
+
+  
+
+  
+  
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter -->
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  <div class="modal hidden">
+    <img src="assets/images/icon-success.svg" alt="" class="success-image">
+
+    <h2 class="modal__heading">Thanks for subscribing!</h2>
+    <p class="modal__message">A confirmation email has been sent to <span class="email-value">@loremcompany.com.</span> 
+      Please open it and click the button inside to confirm your subscription.</p>
+
+      <button class="modal__dismiss">Dismiss message</button>
+
+  </div>
+  <div class="overlay hidden"></div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
